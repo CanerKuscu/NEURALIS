@@ -1,3 +1,5 @@
+# Güvenlik için .env dosyasını asla versiyon kontrolüne eklemeyin
+.env
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
 # dependencies
@@ -32,9 +34,20 @@ yarn-error.*
 
 # local env files
 .env*.local
+.env
+
+# API Keys - NEVER COMMIT
+*.secret
+secrets/
 
 # typescript
 *.tsbuildinfo
+
+# Test coverage
+coverage/
+
+# Sentry
+.sentryclirc
 
 # generated native folders
 /ios
