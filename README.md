@@ -1,26 +1,25 @@
 # NEURALIS - Anti-Brain-Rot Learning Ecosystem
 
-> **Dijital dikkat dağınıklığını psikolojik sorumluluk ve sosyal sonuçlar aracılığıyla ortadan kaldıran, üst düzey, oyunlaştırılmış öğrenme platformu.**
-> *(High-end, gamified learning platform that eliminates digital distraction through psychological accountability and social consequences.)*
+> **High-end, gamified learning platform that eliminates digital distraction through psychological accountability and social consequences.**
 
 ---
 
-## 🧠 Ne İşe Yarar? (What is it good for?)
+## 🧠 What is it good for?
 
-Neuralis, modern dünyanın en büyük problemlerinden biri olan "beyin çürümesine" (brain-rot) ve dijital dikkat dağınıklığına karşı geliştirilmiş bir odaklanma ve öğrenme ekosistemidir. 
-- **Öğrenme Alışkanlığı Kazandırır:** Kullanıcıları her gün düzenli olarak öğrenmeye teşvik eder.
-- **Ertelemeyi (Procrastination) Engeller:** Sadece kişisel değil, sosyal sorumluluklar yükleyerek erteleme hastalığını yener.
-- **Odaklanmayı Artırır:** Yapay zeka destekli analizlerle kullanıcının zayıf yönlerini bulur ve onlara odaklanmasını sağlar.
-- **Kullanım Alanları:** Yeni bir dil öğrenmek, yazılım dillerinde ustalaşmak, sınavlara hazırlanmak veya günlük okuma/çalışma hedeflerini tutturmak için mükemmel bir araçtır.
+Neuralis is a focus and learning ecosystem designed to combat one of the modern world's biggest problems: "brain-rot" and digital distraction.
+- **Builds Learning Habits:** Encourages users to learn consistently every single day.
+- **Prevents Procrastination:** Defeats the habit of procrastination by imposing not just personal, but severe social consequences.
+- **Maximizes Focus:** Uses AI-driven analysis to identify the user's weak points and forces focus precisely where it's needed most.
+- **Use Cases:** It is the perfect tool for learning a new language, mastering programming languages, preparing for difficult exams, or consistently hitting daily reading/studying goals.
 
-## ⚙️ Nasıl Çalışır? (How does it work?)
+## ⚙️ How does it work?
 
-Uygulama, klasik öğrenme platformlarından (örneğin Duolingo) farklı olarak "acımasız" bir psikolojik altyapı üzerine kuruludur:
+Unlike traditional learning platforms (e.g., Duolingo), Neuralis is built on a "ruthless" psychological framework:
 
-1. **Gölge Tilki (Shadow Fox) ve Ölümcül Seri (Dying Streak):** Öğrenme serinizi devam ettirmek için 24 saatiniz vardır. Son 2 saate girdiğinizde "Nöral Çürüme" (Neural Decay) evresi başlar; görsel ve işitsel uyarıcılarla uygulama stres yaratır. Eğer süreyi kaçırırsanız seriniz tamamen sıfırlanır.
-2. **Sosyal Bağımlılık (Synapse Links):** Arkadaşlarınızla kaderinizi birleştirirsiniz. **Shared Fate Protocol** sayesinde, eğer biriniz görevini yapmazsa, **her ikinizin de serisi sıfırlanır.** Bu, yoğun bir sosyal baskı ve sorumluluk mekanizması yaratır.
-3. **Küresel Hiyerarşi:** Başarınız sadece puanlarla değil; "(Doğruluk x Hız) + (Seri Bonusu x 1.5)" formülüyle hesaplanan rekabetçi bir lig sisteminde değerlendirilir. Bronz'dan "Shadow Legend" seviyesine kadar yükselme şansı sunar.
-4. **Yapay Zeka Gölge Eğitmen (AI Shadow Tutor):** Sokratik sorgulama yöntemiyle çalışan yapay zeka (Claude/GPT-4o), yaptığınız hataları analiz eder, size doğrudan cevabı vermek yerine doğruyu bulduracak sorular sorar ve zorluğu anlık olarak sizin performansınıza göre ayarlar.
+1. **Shadow Fox and the Dying Streak:** You have 24 hours to maintain your learning streak. When you enter the final 2 hours, the "Neural Decay" phase begins; the application induces stress through intense visual and auditory stimuli. If you miss the deadline, your streak is completely wiped out.
+2. **Social Interdependency (Synapse Links):** You link your fate with your friends. Through the **Shared Fate Protocol**, if one of you fails to complete your daily task, **both of your streaks are destroyed.** This creates an intense mechanism of social pressure and accountability.
+3. **Global Hierarchy:** Your success is not just evaluated by simple points. You compete in a ruthless league system calculated using the formula: `(Accuracy x Speed) + (Streak Bonus x 1.5)`. This system offers the chance to climb from Bronze all the way to the "Shadow Legend" rank.
+4. **AI Shadow Tutor:** Powered by Socratic questioning (using Claude/GPT-4o), the AI analyzes your mistakes, refuses to give you direct answers, and instead asks questions that force you to find the truth yourself. It dynamically adjusts the difficulty based on your real-time performance.
 
 ---
 
