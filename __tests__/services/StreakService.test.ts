@@ -22,9 +22,9 @@ describe('StreakService', () => {
             expect(calculateStreakState(deadline)).toBe('warning');
         });
 
-        it('should return "warning" when 30min–2h remain', () => {
+        it('should return "neural_decay" when 30min–2h remain', () => {
             const deadline = Date.now() + 1 * 60 * 60 * 1000; // 1h from now
-            expect(calculateStreakState(deadline)).toBe('warning');
+            expect(calculateStreakState(deadline)).toBe('neural_decay');
         });
 
         it('should return "critical" when less than 30 minutes remain', () => {

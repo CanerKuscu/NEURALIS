@@ -311,8 +311,8 @@ export function useNeuralDecay(
         const timeRemaining = deadlineTimestamp - now;
         const minutesRemaining = Math.ceil(timeRemaining / 60000);
 
-        let title = '';
-        let body = '';
+        let title: string;
+        let body: string;
         let sound = 'default';
 
         switch (phase) {

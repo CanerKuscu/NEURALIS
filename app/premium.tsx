@@ -19,7 +19,7 @@ import {
     Crown,
     Check,
     Zap,
-    Infinity,
+    Infinity as InfinityIcon,
     Brain,
     Sparkles,
     Shield,
@@ -58,7 +58,7 @@ const PREMIUM_FEATURES = [
         color: '#CE82FF',
     },
     {
-        icon: Infinity,
+        icon: InfinityIcon,
         title: i18n.t('premium_screen.unlimited_energy'),
         description: i18n.t('premium_screen.unlimited_energy_desc'),
         color: '#FF6B6B',

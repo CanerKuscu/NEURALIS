@@ -4,7 +4,7 @@
  * Global mocks and test environment configuration for Neuralis.
  */
 
-import '@testing-library/react-native/extend-expect';
+import '@testing-library/jest-native/extend-expect';
 
 // ─── Mock AsyncStorage ──────────────────────────────────────────────────────
 jest.mock('@react-native-async-storage/async-storage', () => ({

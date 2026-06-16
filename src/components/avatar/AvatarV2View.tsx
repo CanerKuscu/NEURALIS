@@ -654,7 +654,7 @@ function RenderFacialHair({ type, color }: { type: string; color: string }) {
     const dark = adjustColor(color, -20);
 
     switch (type) {
-        case 'stubble':
+        case 'stubble': {
             // Deterministic positions for stubble dots
             const stubblePositions = [
                 [84, 130], [92, 133], [100, 131], [108, 134], [116, 130],
@@ -669,6 +669,7 @@ function RenderFacialHair({ type, color }: { type: string; color: string }) {
                     ))}
                 </G>
             );
+        }
         case 'mustache':
             return <Path d="M85,128 Q90,134 100,132 Q110,134 115,128" stroke={color} strokeWidth="3" fill="none" strokeLinecap="round" />;
         case 'goatee':

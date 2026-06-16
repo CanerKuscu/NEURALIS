@@ -7,6 +7,7 @@
 // React Native ortamında number döner, Node.js ortamında Timeout nesnesi döner
 declare global {
     namespace NodeJS {
+        // eslint-disable-next-line @typescript-eslint/no-empty-object-type
         interface Timeout { }
     }
 }
