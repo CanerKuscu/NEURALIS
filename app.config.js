@@ -90,7 +90,7 @@ export default {
     ],
     "extra": {
       "eas": {
-        "projectId": "1e4e43bd-fc11-422d-b292-42f19852b41a"
+        "projectId": "1e6e43bd-fc11-422d-b292-d2f19852b41a"
       },
       "privacyPolicyUrl": "https://neuralis.app/privacy",
       "termsOfServiceUrl": "https://neuralis.app/terms"
@@ -99,7 +99,7 @@ export default {
       "policy": "appVersion"
     },
     "updates": {
-      "url": "https://u.expo.dev/" + (process.env.EXPO_PUBLIC_EAS_PROJECT_ID || "YOUR_EAS_PROJECT_ID")
+      "url": "https://u.expo.dev/1e6e43bd-fc11-422d-b292-d2f19852b41a"
     }
   }
 };
