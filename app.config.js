@@ -81,6 +81,14 @@ export default {
       "expo-localization",
       "expo-router",
       [
+        "expo-build-properties",
+        {
+          "android": {
+            "ndkVersion": "27.1.12297006"
+          }
+        }
+      ],
+      [
         "@sentry/react-native/expo",
         {
           "organization": process.env.EXPO_PUBLIC_SENTRY_ORG || "YOUR_SENTRY_ORG",

@@ -7,6 +7,7 @@
         "development": {
             "developmentClient": true,
             "distribution": "internal",
+            "channel": "development",
             "env": {
                 "EXPO_PUBLIC_APP_ENV": "development",
                 "EXPO_PUBLIC_SUPABASE_URL": "YOUR_SUPABASE_URL",
@@ -15,6 +16,7 @@
         },
         "preview": {
             "distribution": "internal",
+            "channel": "preview",
             "env": {
                 "EXPO_PUBLIC_APP_ENV": "preview",
                 "EXPO_PUBLIC_SUPABASE_URL": "YOUR_SUPABASE_URL",
@@ -23,6 +25,7 @@
         },
         "production": {
             "autoIncrement": true,
+            "channel": "production",
             "env": {
                 "EXPO_PUBLIC_APP_ENV": "production",
                 "EXPO_PUBLIC_SUPABASE_URL": "YOUR_SUPABASE_URL",
