@@ -5,11 +5,10 @@
 
 import React, { useEffect, useRef, useMemo } from 'react';
 import type { ViewStyle } from 'react-native';
-import { View, Text, StyleSheet, Animated, Easing } from 'react-native';
+import { View, Text, StyleSheet, Animated } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { BlurView } from 'expo-blur';
 import type { StreakState } from '../../types';
-import { COLORS, TYPOGRAPHY, SPACING, SHADOWS, BORDER_RADIUS } from '../../theme/colors';
+import { COLORS, TYPOGRAPHY, SPACING, BORDER_RADIUS } from '../../theme/colors';
 
 // ═══════════════════════════════════════════════════════════════════════════
 // PROPS

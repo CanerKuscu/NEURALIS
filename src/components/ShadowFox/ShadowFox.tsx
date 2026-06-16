@@ -6,14 +6,13 @@
 
 import React, { useEffect } from 'react';
 import type { ImageSourcePropType, ViewStyle } from 'react-native';
-import { View, Image, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withRepeat,
   withSequence,
   withTiming,
-  withSpring,
   Easing,
 } from 'react-native-reanimated';
 import type { StreakState } from '../../types';

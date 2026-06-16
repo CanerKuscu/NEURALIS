@@ -4,7 +4,7 @@
  * Re-uses the main lesson logic with series context
  */
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   StyleSheet,
   View,
@@ -14,7 +14,6 @@ import {
   ActivityIndicator,
   ScrollView,
   Dimensions,
-  Modal,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useLocalSearchParams, router } from 'expo-router';
@@ -24,7 +23,6 @@ import {
   CheckCircle,
   XCircle,
   Zap,
-  ChevronRight,
   Heart,
   BookOpen,
   X,
@@ -37,14 +35,9 @@ import Animated, {
   useAnimatedStyle,
   withTiming,
   withSpring,
-  withSequence,
-  withDelay,
   FadeIn,
-  FadeOut,
   SlideInDown,
-  SlideInUp,
   ZoomIn,
-  runOnJS,
 } from 'react-native-reanimated';
 import { LinearGradient } from 'expo-linear-gradient';
 import { supabase } from '../src/config/supabase';

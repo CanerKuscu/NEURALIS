@@ -16,17 +16,7 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
-import {
-  ArrowLeft,
-  Search,
-  Star,
-  Heart,
-  Download,
-  Users,
-  BookOpen,
-  Filter,
-  TrendingUp,
-} from 'lucide-react-native';
+import { ArrowLeft, Search, Star, Heart, Download, BookOpen } from 'lucide-react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 import { useTheme } from '../src/context/ThemeContext';

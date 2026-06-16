@@ -1,12 +1,11 @@
 import React, { useEffect } from 'react';
-import { StyleSheet, View, Text, Dimensions } from 'react-native';
+import { StyleSheet, Text, Dimensions } from 'react-native';
 import * as SplashScreen from 'expo-splash-screen';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withSpring,
   withTiming,
-  withSequence,
   withDelay,
   runOnJS,
 } from 'react-native-reanimated';

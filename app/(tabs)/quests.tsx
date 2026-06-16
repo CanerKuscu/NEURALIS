@@ -2,15 +2,7 @@
  * Quests Screen - Monthly AI Challenges & Rich UI
  */
 import React, { useState, useEffect } from 'react';
-import {
-  StyleSheet,
-  View,
-  Text,
-  TouchableOpacity,
-  ScrollView,
-  Animated as RNAnimated,
-  Dimensions,
-} from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity, ScrollView, Dimensions } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import {
   Target,
@@ -27,7 +19,7 @@ import {
 } from 'lucide-react-native';
 import { supabase } from '../../src/config/supabase';
 import { COLORS } from '../../src/constants/theme';
-import Animated, { FadeInDown, Layout, ZoomIn } from 'react-native-reanimated';
+import Animated, { FadeInDown, ZoomIn } from 'react-native-reanimated';
 import { LinearGradient } from 'expo-linear-gradient';
 import i18n from '../../src/i18n';
 import { useTheme } from '../../src/context/ThemeContext';

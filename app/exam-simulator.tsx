@@ -22,10 +22,8 @@ import {
   CheckCircle,
   XCircle,
   Trophy,
-  Target,
   BookOpen,
   ChevronRight,
-  BarChart3,
   Clock,
 } from 'lucide-react-native';
 import { LinearGradient } from 'expo-linear-gradient';

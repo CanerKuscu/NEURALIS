@@ -11,7 +11,6 @@ import {
   TouchableOpacity,
   Dimensions,
   ActivityIndicator,
-  Vibration,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
@@ -19,18 +18,16 @@ import { ArrowLeft, Zap, Timer, Trophy, Target, Flame, RotateCcw } from 'lucide-
 import { LinearGradient } from 'expo-linear-gradient';
 import Animated, {
   FadeInDown,
-  FadeIn,
   ZoomIn,
   useSharedValue,
   useAnimatedStyle,
   withTiming,
   withSequence,
-  withSpring,
 } from 'react-native-reanimated';
 import { useTheme } from '../src/context/ThemeContext';
 import { supabase } from '../src/config/supabase';
 import type { QuickFireRound } from '../src/services/QuickFireService';
-import { quickFireService, QuickFireQuestion } from '../src/services/QuickFireService';
+import { quickFireService } from '../src/services/QuickFireService';
 import * as Haptics from 'expo-haptics';
 import i18n from '../src/i18n';
 

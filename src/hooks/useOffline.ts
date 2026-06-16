@@ -9,7 +9,7 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { AppStateStatus } from 'react-native';
-import { AppState, Platform } from 'react-native';
+import { AppState } from 'react-native';
 
 // ═══════════════════════════════════════════════════════════════════════════
 // NETWORK STATE DETECTION

@@ -2,7 +2,7 @@
  * Duolingo-Style Human Head - Minimalist, rounded, cute design
  */
 import React from 'react';
-import { G, Ellipse, Circle, Path, Defs, RadialGradient, Stop } from 'react-native-svg';
+import { G, Ellipse, Defs, RadialGradient, Stop } from 'react-native-svg';
 
 export type HeadShape = 'oval' | 'round' | 'square' | 'heart' | 'long';
 

@@ -2,7 +2,7 @@
  * Duolingo-Style Human Mouth - Simple, expressive
  */
 import React from 'react';
-import { G, Path, Ellipse, Circle } from 'react-native-svg';
+import { G, Path, Ellipse } from 'react-native-svg';
 
 export type MouthStyle = 'smile' | 'grin' | 'neutral' | 'open' | 'smirk' | 'pout';
 

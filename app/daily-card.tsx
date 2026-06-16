@@ -14,15 +14,7 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { LinearGradient } from 'expo-linear-gradient';
 import { router } from 'expo-router';
-import {
-  ArrowLeft,
-  Heart,
-  Share2,
-  ChevronLeft,
-  ChevronRight,
-  BookOpen,
-  Calendar,
-} from 'lucide-react-native';
+import { ArrowLeft, Heart, Share2, BookOpen, Calendar } from 'lucide-react-native';
 import Animated, { FadeInDown, FadeIn } from 'react-native-reanimated';
 import { useTheme } from '../src/context/ThemeContext';
 import { dailyCardService, CARD_CATEGORIES } from '../src/services/DailyCardService';

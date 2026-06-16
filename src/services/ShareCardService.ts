@@ -6,7 +6,7 @@
  * Haftalık/aylık özet kartlar
  */
 
-import { Share, Platform } from 'react-native';
+import { Share } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // ═══════════════════════════════════════════════════════════════════════════

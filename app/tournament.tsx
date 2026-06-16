@@ -6,19 +6,8 @@ import { StyleSheet, View, ScrollView, Text, TouchableOpacity, StatusBar } from 
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { LinearGradient } from 'expo-linear-gradient';
 import { router } from 'expo-router';
-import {
-  ArrowLeft,
-  Trophy,
-  Clock,
-  Users,
-  Gem,
-  Star,
-  Zap,
-  Shield,
-  Crown,
-  ChevronRight,
-} from 'lucide-react-native';
-import Animated, { FadeInDown, FadeIn } from 'react-native-reanimated';
+import { ArrowLeft, Trophy, Clock, Users, Gem } from 'lucide-react-native';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 import { useTheme } from '../src/context/ThemeContext';
 import { tournamentService } from '../src/services/TournamentService';
 import type { Tournament, TournamentLeaderboard } from '../src/services/TournamentService';

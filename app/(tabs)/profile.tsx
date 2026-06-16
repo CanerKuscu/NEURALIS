@@ -16,14 +16,11 @@ import { useRouter } from 'expo-router';
 import { useFocusEffect } from '@react-navigation/native';
 import {
   Settings,
-  Edit2,
   Flame,
   Zap,
   Trophy,
   UserPlus,
   Share2,
-  Users,
-  BookOpen,
   X,
   Target,
   Camera,

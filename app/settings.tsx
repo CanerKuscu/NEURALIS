@@ -35,14 +35,13 @@ import {
   Bot,
   Sparkles,
   Flag,
-  MessageSquare,
   Send,
   FileText,
 } from 'lucide-react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import i18n from '../src/i18n';
 import { useToast } from '../src/context/ToastContext';
-import { setMuted, getMuted } from '../src/utils/sounds';
+import { setMuted } from '../src/utils/sounds';
 
 import { useTheme } from '../src/context/ThemeContext';
 import { useLanguage } from '../src/context/LanguageContext';

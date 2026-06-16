@@ -11,12 +11,10 @@ import {
   StyleSheet,
   TouchableOpacity,
   ActivityIndicator,
-  Alert,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Crown, Sparkles, AlertCircle, Check, X } from 'lucide-react-native';
 import { COLORS, SPACING, RADIUS, TYPOGRAPHY, SHADOWS } from '../constants/theme';
-import { t } from '../i18n';
 
 interface CustomTopicInputProps {
   onSubmit: (topic: string) => Promise<{ approved: boolean; reason?: string }>;

@@ -27,13 +27,12 @@ import {
 } from 'lucide-react-native';
 import Animated, { FadeInDown, FadeInRight } from 'react-native-reanimated';
 import { useTheme } from '../src/context/ThemeContext';
-import { storyModeService, STORY_WORLDS } from '../src/services/StoryModeService';
+import { storyModeService } from '../src/services/StoryModeService';
 import type {
   StoryWorld,
   StoryChapter,
   StoryProgress,
   StoryChoice,
-  StoryQuestion,
 } from '../src/services/StoryModeService';
 import * as Haptics from 'expo-haptics';
 import i18n from '../src/i18n';

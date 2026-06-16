@@ -20,7 +20,6 @@ import {
   Share2,
   MessageCircle,
   Heart,
-  Award,
   UserCheck,
   Swords,
 } from 'lucide-react-native';

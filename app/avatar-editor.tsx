@@ -5,7 +5,7 @@
  * beautiful UI, and extensive customization options
  */
 
-import React, { useState, useMemo, useCallback, useEffect } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import {
   StyleSheet,
   View,
@@ -27,7 +27,6 @@ import Animated, {
   withSequence,
   withTiming,
   Easing,
-  FadeIn,
   FadeInDown,
   FadeInUp,
   ZoomIn,

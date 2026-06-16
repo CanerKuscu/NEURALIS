@@ -19,13 +19,10 @@ import { useRouter } from 'expo-router';
 import {
   ArrowLeft,
   Mic,
-  MicOff,
   Volume2,
-  VolumeX,
   Crown,
   Send,
   StopCircle,
-  Play,
   MessageCircle,
 } from 'lucide-react-native';
 import { LinearGradient } from 'expo-linear-gradient';

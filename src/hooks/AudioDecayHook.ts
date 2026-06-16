@@ -11,12 +11,9 @@ import type { AVPlaybackStatus } from 'expo-av';
 import { Audio } from 'expo-av';
 import type { AppStateStatus } from 'react-native';
 import { AppState, Vibration, Platform } from 'react-native';
-import * as Notifications from '../services/safeNotifications';
 
 import type { ShadowFoxStatus } from '../services/LocalizationService';
-import { NotificationSeverity, localizationService } from '../services/LocalizationService';
 import type { StreakStatus } from '../services/NotificationEngine';
-import { notificationEngine } from '../services/NotificationEngine';
 import { tickService } from '../services/TickService';
 
 // ═══════════════════════════════════════════════════════════════════════════

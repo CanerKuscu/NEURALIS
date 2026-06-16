@@ -7,7 +7,7 @@ import { LanguageProvider } from '../src/context/LanguageContext';
 import { SubscriptionProvider } from '../src/providers/SubscriptionProvider';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { supabase } from '../src/config/supabase';
-import { View, ActivityIndicator, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import SplashView from '../components/SplashView';
 import * as SplashScreen from 'expo-splash-screen';
@@ -16,7 +16,7 @@ import { NotificationService } from '../src/services/NotificationService';
 import { OfflineBanner } from '../src/components/OfflineBanner';
 import { setLanguage } from '../src/i18n';
 import { getLocales } from 'expo-localization';
-import { initSentry, setSentryUser } from '../src/config/sentry';
+import { initSentry } from '../src/config/sentry';
 import type { Session } from '@supabase/supabase-js';
 
 // Initialize Sentry as early as possible

@@ -11,10 +11,10 @@ import {
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { ArrowLeft, User, Mail, Save, Calendar, Lock } from 'lucide-react-native';
+import { ArrowLeft, User, Mail, Save, Calendar } from 'lucide-react-native';
 import { supabase } from '../src/config/supabase';
 import { useTheme } from '../src/context/ThemeContext';
-import { SPACING, RADIUS } from '../src/constants/theme';
+import { RADIUS } from '../src/constants/theme';
 import DateTimePicker from '@react-native-community/datetimepicker';
 import { useToast } from '../src/context/ToastContext';
 

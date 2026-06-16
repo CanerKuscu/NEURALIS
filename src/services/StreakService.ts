@@ -1,6 +1,5 @@
 import { supabase } from '../config/supabase';
 import type { StreakData, StreakState, StreakHistoryEntry } from '../types';
-import { UserProfile } from '../types';
 // ...existing code...
 
 // ═══════════════════════════════════════════════════════════════════════════

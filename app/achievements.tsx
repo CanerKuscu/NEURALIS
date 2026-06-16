@@ -1,19 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Platform } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import { useTheme } from '../src/context/ThemeContext';
 import { useRouter } from 'expo-router';
-import {
-  ArrowLeft,
-  Trophy,
-  Flame,
-  Zap,
-  Target,
-  BookOpen,
-  Share2,
-  Lock,
-  Star,
-} from 'lucide-react-native';
-import Animated, { FadeInDown, FadeIn } from 'react-native-reanimated';
+import { ArrowLeft, Trophy, Flame, Zap, Target, BookOpen, Lock, Star } from 'lucide-react-native';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { LinearGradient } from 'expo-linear-gradient';
 import { supabase } from '../src/config/supabase';

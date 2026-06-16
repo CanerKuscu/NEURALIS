@@ -3,7 +3,7 @@
  * Shadow Fox maskotunu kozmetik eşyalarla giydir
  */
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   StyleSheet,
   View,
@@ -16,7 +16,7 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
-import { ArrowLeft, Crown, Gem, Check, Lock, Sparkles } from 'lucide-react-native';
+import { ArrowLeft, Crown, Gem, Check, Lock } from 'lucide-react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Animated, { FadeInDown, ZoomIn } from 'react-native-reanimated';
 import { useTheme } from '../src/context/ThemeContext';
@@ -30,7 +30,6 @@ import type {
 } from '../src/services/FoxCosmeticService';
 import {
   foxCosmeticService,
-  FOX_COSMETICS,
   getCosmeticsByCategory,
   getCosmeticById,
   getRarityColor,

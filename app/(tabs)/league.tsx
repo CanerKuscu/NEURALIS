@@ -7,22 +7,12 @@ import {
   View,
   Text,
   FlatList,
-  Image,
   TouchableOpacity,
   ActivityIndicator,
   ScrollView,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import {
-  Trophy,
-  Shield,
-  Crown,
-  ChevronUp,
-  ChevronDown,
-  Minus,
-  Clock,
-  Calendar,
-} from 'lucide-react-native';
+import { Trophy, Shield, Crown, ChevronUp, Minus, Clock, Calendar } from 'lucide-react-native';
 import { supabase } from '../../src/config/supabase';
 import { COLORS } from '../../src/constants/theme';
 import { LinearGradient } from 'expo-linear-gradient';

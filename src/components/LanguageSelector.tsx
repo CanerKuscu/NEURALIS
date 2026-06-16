@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Modal, FlatList } from 'react-native';
 import { Globe, Check, ChevronRight, X } from 'lucide-react-native';
-import { COLORS, SPACING, RADIUS, TYPOGRAPHY, SHADOWS } from '../constants/theme';
+import { COLORS, SPACING, RADIUS, TYPOGRAPHY } from '../constants/theme';
 import { SUPPORTED_LANGUAGES, setLanguage, getCurrentLanguage, t } from '../i18n';
 
 interface LanguageSelectorProps {

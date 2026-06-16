@@ -15,7 +15,7 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
-import { ArrowLeft, Trophy, Flame, Zap, BookOpen, Target, Crown, Medal } from 'lucide-react-native';
+import { ArrowLeft, Flame, Zap, BookOpen, Target, Crown, Medal } from 'lucide-react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Animated, { FadeInDown, FadeInUp, ZoomIn } from 'react-native-reanimated';
 import { useTheme } from '../src/context/ThemeContext';

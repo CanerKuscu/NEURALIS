@@ -15,18 +15,9 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
-import { ArrowLeft, Brain, AlertTriangle, Zap, RefreshCw, ChevronRight } from 'lucide-react-native';
+import { ArrowLeft, Brain, Zap, RefreshCw, ChevronRight } from 'lucide-react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import Animated, {
-  FadeInDown,
-  ZoomIn,
-  FadeIn,
-  useSharedValue,
-  useAnimatedStyle,
-  withRepeat,
-  withSequence,
-  withTiming,
-} from 'react-native-reanimated';
+import Animated, { FadeInDown, FadeIn } from 'react-native-reanimated';
 import Svg, { Circle, G, Text as SvgText, Line } from 'react-native-svg';
 import { useTheme } from '../src/context/ThemeContext';
 import { supabase } from '../src/config/supabase';

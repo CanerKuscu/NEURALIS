@@ -14,7 +14,6 @@ import {
   streakService,
   audioService,
   synapseService,
-  rankingService,
   dopamineMonitorService,
   calculateStreakState,
   formatTimeRemaining,

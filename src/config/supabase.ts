@@ -10,7 +10,7 @@ import type { SupabaseClient } from '@supabase/supabase-js';
 import { createClient } from '@supabase/supabase-js';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-let SecureStore: typeof import('expo-secure-store') | null = null;
+let SecureStore: any = null;
 try {
   SecureStore = require('expo-secure-store');
 } catch {

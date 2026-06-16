@@ -2,15 +2,7 @@
  * Shop Screen - Premium Gold & Gem Theme
  */
 import React, { useState, useEffect } from 'react';
-import {
-  StyleSheet,
-  View,
-  Text,
-  TouchableOpacity,
-  ActivityIndicator,
-  Modal,
-  Dimensions,
-} from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity, ActivityIndicator, Modal } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import {
   Gem,
@@ -19,7 +11,6 @@ import {
   Zap,
   TrendingUp,
   Check,
-  X,
   Crown,
   Shirt,
   Palette,
@@ -27,7 +18,7 @@ import {
 } from 'lucide-react-native';
 import { supabase } from '../../src/config/supabase';
 import { COLORS } from '../../src/constants/theme';
-import Animated, { FadeInDown, FadeInUp, Layout, ZoomIn, ZoomOut } from 'react-native-reanimated';
+import Animated, { FadeInDown, Layout, ZoomIn, ZoomOut } from 'react-native-reanimated';
 import { LinearGradient } from 'expo-linear-gradient';
 import i18n from '../../src/i18n';
 import { useTheme } from '../../src/context/ThemeContext';

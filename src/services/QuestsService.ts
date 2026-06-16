@@ -4,7 +4,6 @@
  */
 
 import type { MonthlyQuest, FriendQuest, DailyQuest, QuestsState } from '../types/questTypes';
-import { getQuestProgress, getRemainingTime } from '../types/questTypes';
 
 // ═══════════════════════════════════════════════════════════════════════════
 // MOCK DATA

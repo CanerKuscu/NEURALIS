@@ -11,7 +11,6 @@ import {
   X,
   Crown,
   Check,
-  Zap,
   Infinity as InfinityIcon,
   Brain,
   Sparkles,
@@ -24,7 +23,7 @@ import Animated, { FadeInDown, FadeInUp, ZoomIn } from 'react-native-reanimated'
 import { useTheme } from '../src/context/ThemeContext';
 import { useSubscription } from '../src/providers/SubscriptionProvider';
 import { useToast } from '../src/context/ToastContext';
-import { freeTrialService, TRIAL_BENEFITS } from '../src/services/FreeTrialService';
+import { freeTrialService } from '../src/services/FreeTrialService';
 import i18n from '../src/i18n';
 import { CustomModal, useModal } from '../src/components/CustomModal';
 

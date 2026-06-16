@@ -17,19 +17,9 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
-import {
-  ArrowLeft,
-  Users,
-  Plus,
-  MessageCircle,
-  Send,
-  Play,
-  Zap,
-  BookOpen,
-  Crown,
-} from 'lucide-react-native';
+import { ArrowLeft, Users, Plus, Send, Play, Zap, Crown } from 'lucide-react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import Animated, { FadeInDown, FadeIn, ZoomIn } from 'react-native-reanimated';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 import { useTheme } from '../src/context/ThemeContext';
 import { supabase } from '../src/config/supabase';
 import type { StudyRoom, RoomParticipant, RoomMessage } from '../src/services/StudyRoomService';

@@ -1,6 +1,6 @@
 import React from 'react';
 import type { TextStyle, StyleProp } from 'react-native';
-import { Text, StyleSheet } from 'react-native';
+import { Text } from 'react-native';
 import { useTheme } from '../../context/ThemeContext';
 
 interface TypographyProps {

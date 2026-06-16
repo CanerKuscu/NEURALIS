@@ -5,8 +5,8 @@
 
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { ChevronDown, AlertTriangle } from 'lucide-react-native';
-import { COLORS, SPACING, RADIUS, TYPOGRAPHY } from '../constants/theme';
+import { ChevronDown } from 'lucide-react-native';
+import { SPACING, TYPOGRAPHY } from '../constants/theme';
 
 interface RelegationZoneProps {
   label?: string;

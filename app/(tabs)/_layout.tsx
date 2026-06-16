@@ -4,7 +4,7 @@
 
 import React from 'react';
 import { Tabs } from 'expo-router';
-import { Platform, StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Home, Target, Trophy, MessageCircle, User, Gem } from 'lucide-react-native';
 import i18n from '../../src/i18n';

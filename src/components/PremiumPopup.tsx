@@ -11,7 +11,7 @@
  * - Kullanıcı "bir daha gösterme" demediyse
  */
 
-import React, { useEffect, useState, useCallback, useRef } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import {
   StyleSheet,
   View,
@@ -31,13 +31,11 @@ import Animated, {
   FadeIn,
   FadeInDown,
   FadeInUp,
-  ZoomIn,
 } from 'react-native-reanimated';
 import { LinearGradient } from 'expo-linear-gradient';
 import {
   X,
   Crown,
-  Brain,
   Sparkles,
   Shield,
   Star,

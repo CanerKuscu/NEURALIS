@@ -18,8 +18,8 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { LinearGradient } from 'expo-linear-gradient';
 import { router } from 'expo-router';
-import { ArrowLeft, Send, Sparkles, Trash2, Plus, Bot, User } from 'lucide-react-native';
-import Animated, { FadeInDown, FadeIn } from 'react-native-reanimated';
+import { ArrowLeft, Send, Sparkles, Trash2, Plus } from 'lucide-react-native';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 import i18n from '../src/i18n';
 import { useTheme } from '../src/context/ThemeContext';
 import { aiChatService, QUICK_PROMPTS } from '../src/services/AIChatService';

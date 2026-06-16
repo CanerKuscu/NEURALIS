@@ -4,14 +4,13 @@ import {
   Text,
   StyleSheet,
   TouchableOpacity,
-  Alert,
   KeyboardAvoidingView,
   Platform,
   ActivityIndicator,
   TextInput,
 } from 'react-native';
 import { useRouter, useLocalSearchParams } from 'expo-router';
-import { COLORS, SPACING, RADIUS, TYPOGRAPHY } from '../../src/constants/theme';
+import { COLORS, SPACING, RADIUS } from '../../src/constants/theme';
 import { authService } from '../../src/services/AuthService';
 import { supabase } from '../../src/config/supabase';
 import { LinearGradient } from 'expo-linear-gradient';

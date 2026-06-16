@@ -18,7 +18,7 @@ import { useLocalSearchParams, router } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useFocusEffect } from '@react-navigation/native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { ArrowLeft, ChevronRight, BookOpen, Lock, CheckCircle } from 'lucide-react-native';
+import { ArrowLeft, ChevronRight, BookOpen, CheckCircle } from 'lucide-react-native';
 import Animated, { FadeInDown } from 'react-native-reanimated';
 import { supabase } from '../src/config/supabase';
 import { useTheme } from '../src/context/ThemeContext';

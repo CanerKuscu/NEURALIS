@@ -3,7 +3,7 @@
  * Kendi kartlarını oluştur veya AI ile otomatik oluştur — Spaced Repetition
  */
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   StyleSheet,
   View,
@@ -12,7 +12,6 @@ import {
   FlatList,
   TextInput,
   ActivityIndicator,
-  Modal,
   Dimensions,
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -21,18 +20,14 @@ import {
   ArrowLeft,
   Plus,
   Sparkles,
-  Trash2,
-  RotateCcw,
   CheckCircle,
   XCircle,
   BookOpen,
   Layers,
-  Edit3,
 } from 'lucide-react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Animated, {
   FadeInDown,
-  ZoomIn,
   useSharedValue,
   useAnimatedStyle,
   withTiming,

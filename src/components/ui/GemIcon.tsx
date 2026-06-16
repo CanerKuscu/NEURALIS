@@ -5,13 +5,7 @@ import React from 'react';
 import type { ViewStyle } from 'react-native';
 import { View } from 'react-native';
 import Svg, { Path, Defs, LinearGradient, Stop, G, Polygon, Ellipse } from 'react-native-svg';
-import Animated, {
-  useAnimatedStyle,
-  useSharedValue,
-  withRepeat,
-  withTiming,
-  Easing,
-} from 'react-native-reanimated';
+import { useSharedValue, withRepeat, withTiming, Easing } from 'react-native-reanimated';
 
 interface GemIconProps {
   size?: number;

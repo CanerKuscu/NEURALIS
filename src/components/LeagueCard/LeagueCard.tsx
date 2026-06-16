@@ -8,7 +8,6 @@ import type { ViewStyle } from 'react-native';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import type { LeagueTier } from '../../types';
-import { BracketParticipant } from '../../types';
 import { COLORS, TYPOGRAPHY, SPACING, BORDER_RADIUS } from '../../theme/colors';
 import { LEAGUE_CONFIGS } from '../../services/RankingService';
 

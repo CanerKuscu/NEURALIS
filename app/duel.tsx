@@ -7,17 +7,7 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image, Dimensions } from 'react-native';
 import { useTheme } from '../src/context/ThemeContext';
 import { useRouter } from 'expo-router';
-import {
-  ArrowLeft,
-  Swords,
-  Search,
-  User,
-  Zap,
-  Trophy,
-  Shield,
-  Flame,
-  AlertTriangle,
-} from 'lucide-react-native';
+import { ArrowLeft, Swords, Search, Trophy, Flame, AlertTriangle } from 'lucide-react-native';
 import { supabase } from '../src/config/supabase';
 import Animated, {
   useSharedValue,
@@ -30,7 +20,6 @@ import Animated, {
   FadeIn,
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { LinearGradient } from 'expo-linear-gradient';
 import AvatarV2View from '../src/components/avatar/AvatarV2View';
 import { DuelService } from '../src/services/DuelService';
 import i18n from '../src/i18n';

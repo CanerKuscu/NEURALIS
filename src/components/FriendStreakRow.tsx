@@ -4,9 +4,9 @@
  */
 
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Image } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import { Plus, Check } from 'lucide-react-native';
-import { COLORS, SPACING, RADIUS, TYPOGRAPHY } from '../constants/theme';
+import { COLORS, SPACING, TYPOGRAPHY } from '../constants/theme';
 import type { FriendStreak } from '../types/leagueTypes';
 
 interface FriendStreakRowProps {

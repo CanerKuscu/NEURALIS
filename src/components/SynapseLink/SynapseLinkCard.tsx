@@ -5,10 +5,9 @@
 
 import React from 'react';
 import type { ViewStyle } from 'react-native';
-import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import type { SynapseLink } from '../../types';
-import { SynapseLinkStatus } from '../../types';
 import { COLORS, TYPOGRAPHY, SPACING, BORDER_RADIUS } from '../../theme/colors';
 
 // ═══════════════════════════════════════════════════════════════════════════

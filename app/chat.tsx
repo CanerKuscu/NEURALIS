@@ -5,7 +5,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import {
   StyleSheet,
   View,
-  ScrollView,
   Text,
   TouchableOpacity,
   StatusBar,
@@ -16,17 +15,8 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
-import {
-  ArrowLeft,
-  Send,
-  Smile,
-  Image,
-  Zap,
-  MessageCircle,
-  Plus,
-  Users,
-} from 'lucide-react-native';
-import Animated, { FadeInDown, FadeIn } from 'react-native-reanimated';
+import { ArrowLeft, Send, Smile, Plus, Users } from 'lucide-react-native';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 import { useTheme } from '../src/context/ThemeContext';
 import { chatService, STICKER_PACKS } from '../src/services/ChatService';
 import type { Chat, ChatMessage } from '../src/services/ChatService';

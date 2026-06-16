@@ -4,8 +4,8 @@
  */
 
 import React, { useEffect, useRef } from 'react';
-import { View, Text, StyleSheet, Animated, Image } from 'react-native';
-import { COLORS, SPACING, RADIUS, TYPOGRAPHY } from '../constants/theme';
+import { View, Text, StyleSheet, Animated } from 'react-native';
+import { SPACING, RADIUS } from '../constants/theme';
 import type { LeagueParticipant } from '../types/leagueTypes';
 
 interface LeaguePodiumProps {

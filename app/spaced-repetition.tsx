@@ -1,31 +1,12 @@
 /**
  * Spaced Repetition Screen — Flash Card Tekrar Sistemi
  */
-import React, { useState, useEffect, useCallback, useRef } from 'react';
-import {
-  StyleSheet,
-  View,
-  ScrollView,
-  Text,
-  TouchableOpacity,
-  StatusBar,
-  Dimensions,
-} from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { StyleSheet, View, Text, TouchableOpacity, StatusBar, Dimensions } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { LinearGradient } from 'expo-linear-gradient';
 import { router } from 'expo-router';
-import {
-  ArrowLeft,
-  RotateCcw,
-  Check,
-  X,
-  Brain,
-  Layers,
-  TrendingUp,
-  Calendar,
-  ChevronRight,
-  Sparkles,
-} from 'lucide-react-native';
+import { ArrowLeft, Check, X, Brain, Layers, Sparkles } from 'lucide-react-native';
 import Animated, {
   FadeInDown,
   FadeInUp,
@@ -34,11 +15,10 @@ import Animated, {
   withSpring,
   withTiming,
   interpolate,
-  Extrapolation,
 } from 'react-native-reanimated';
 import { useTheme } from '../src/context/ThemeContext';
 import { spacedRepetitionService } from '../src/services/SpacedRepetitionService';
-import type { FlashCard, ReviewSession } from '../src/services/SpacedRepetitionService';
+import type { ReviewSession } from '../src/services/SpacedRepetitionService';
 import * as Haptics from 'expo-haptics';
 import i18n from '../src/i18n';
 

@@ -1,5 +1,5 @@
 import * as Linking from 'expo-linking';
-import { Share, Platform } from 'react-native';
+import { Share } from 'react-native';
 
 export const DeepLinkService = {
   /**

@@ -2,7 +2,7 @@
  * Duolingo-Style Human Nose - Minimal, subtle
  */
 import React from 'react';
-import { G, Path, Ellipse, Circle } from 'react-native-svg';
+import { G, Path, Circle } from 'react-native-svg';
 
 export type NoseStyle = 'small' | 'medium' | 'pointed' | 'button' | 'wide' | 'none';
 

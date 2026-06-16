@@ -1,7 +1,7 @@
 /**
  * Audio Lessons Screen — Sesli Dersler (Podcast Stili)
  */
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   StyleSheet,
   View,
@@ -19,7 +19,6 @@ import {
   Play,
   Pause,
   SkipForward,
-  Volume2,
   Check,
   Clock,
   Headphones,
@@ -27,8 +26,8 @@ import {
 } from 'lucide-react-native';
 import Animated, { FadeInDown, FadeIn } from 'react-native-reanimated';
 import { useTheme } from '../src/context/ThemeContext';
-import { audioLessonService, AUDIO_LESSONS } from '../src/services/AudioLessonService';
-import type { AudioLesson, AudioProgress, AudioSegment } from '../src/services/AudioLessonService';
+import { audioLessonService } from '../src/services/AudioLessonService';
+import type { AudioLesson, AudioProgress } from '../src/services/AudioLessonService';
 import * as Speech from 'expo-speech';
 import * as Haptics from 'expo-haptics';
 import i18n from '../src/i18n';

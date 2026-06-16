@@ -15,7 +15,6 @@ import Svg, {
   Circle,
   Ellipse,
   Polygon,
-  Rect,
 } from 'react-native-svg';
 
 export type LeagueRank =

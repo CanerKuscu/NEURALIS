@@ -28,7 +28,7 @@ import {
   ChevronRight,
 } from 'lucide-react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import Animated, { FadeInDown, FadeIn, ZoomIn } from 'react-native-reanimated';
+import Animated, { FadeInDown, ZoomIn } from 'react-native-reanimated';
 import { useTheme } from '../src/context/ThemeContext';
 import { supabase } from '../src/config/supabase';
 import type { WeeklySummary } from '../src/services/WeeklySummaryService';

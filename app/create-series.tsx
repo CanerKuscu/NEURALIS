@@ -28,7 +28,7 @@ import {
   Clock,
 } from 'lucide-react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import Animated, { FadeInDown, FadeInRight } from 'react-native-reanimated';
+import Animated, { FadeInDown } from 'react-native-reanimated';
 import { useTheme } from '../src/context/ThemeContext';
 import { useSubscription } from '../src/providers/SubscriptionProvider';
 import { useToast } from '../src/context/ToastContext';

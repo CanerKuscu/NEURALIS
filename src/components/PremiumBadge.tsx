@@ -4,10 +4,10 @@
  */
 
 import React, { useEffect, useRef } from 'react';
-import { View, Text, StyleSheet, Animated, Easing } from 'react-native';
+import { Text, StyleSheet, Animated, Easing } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Crown, Star, Sparkles } from 'lucide-react-native';
-import { COLORS, SPACING, RADIUS, TYPOGRAPHY, SHADOWS } from '../constants/theme';
+import { Crown, Sparkles } from 'lucide-react-native';
+import { SPACING, RADIUS, TYPOGRAPHY, SHADOWS } from '../constants/theme';
 
 interface PremiumBadgeProps {
   size?: 'small' | 'medium' | 'large';

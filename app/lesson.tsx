@@ -5,7 +5,7 @@
  * - Streak animation
  */
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   StyleSheet,
   View,
@@ -24,21 +24,16 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useLocalSearchParams, router } from 'expo-router';
 import TTSButton from '../src/components/TTSButton';
 import {
-  ArrowLeft,
   CheckCircle,
   XCircle,
   Zap,
   ChevronRight,
-  Heart,
   BookOpen,
   X,
   Flame,
   Star,
   Trophy,
-  Award,
-  Target,
   Lightbulb,
-  Volume2,
 } from 'lucide-react-native';
 import Animated, {
   useSharedValue,
@@ -52,9 +47,7 @@ import Animated, {
   SlideInDown,
   SlideInUp,
   ZoomIn,
-  ZoomOut,
   FadeInDown,
-  runOnJS,
 } from 'react-native-reanimated';
 import { LinearGradient } from 'expo-linear-gradient';
 import { supabase } from '../src/config/supabase';

@@ -15,9 +15,9 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
-import { ArrowLeft, Trophy, Medal, Crown, TrendingUp, ChevronDown } from 'lucide-react-native';
+import { ArrowLeft, Medal, Crown, TrendingUp } from 'lucide-react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import Animated, { FadeInDown, FadeIn, ZoomIn } from 'react-native-reanimated';
+import Animated, { FadeInDown, FadeIn } from 'react-native-reanimated';
 import { useTheme } from '../src/context/ThemeContext';
 import { supabase } from '../src/config/supabase';
 import * as Haptics from 'expo-haptics';

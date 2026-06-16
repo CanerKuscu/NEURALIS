@@ -12,11 +12,8 @@
  * Philosophy: Challenge must evolve with the learner
  */
 
-import { supabase } from '../config/supabase';
-
 // Uses Supabase for difficulty data queries
 import type { TaskCategory, TaskDifficulty } from '../types/index';
-import { Task, UserProfile } from '../types/index';
 
 // ═══════════════════════════════════════════════════════════════════════════
 // CONFIGURATION

@@ -3,6 +3,7 @@ const tsParser = require('@typescript-eslint/parser');
 const tsPlugin = require('@typescript-eslint/eslint-plugin');
 const prettierConfig = require('eslint-config-prettier');
 const prettierPlugin = require('eslint-plugin-prettier');
+const unusedImports = require('eslint-plugin-unused-imports');
 
 /**
  * ESLint Flat Config (CommonJS) for ESLint v9+
@@ -69,6 +70,7 @@ module.exports = [
     plugins: {
       '@typescript-eslint': tsPlugin,
       'prettier': prettierPlugin,
+      'unused-imports': unusedImports,
     },
     rules: {
       ...(tsPlugin.configs.recommended?.rules ?? {}),
@@ -87,10 +89,9 @@ module.exports = [
 
       // Project conventions
       '@typescript-eslint/no-explicit-any': 'off',
-      '@typescript-eslint/no-unused-vars': [
-        'warn',
-        { argsIgnorePattern: '^_', varsIgnorePattern: '^_', caughtErrorsIgnorePattern: '^_' },
-      ],
+      '@typescript-eslint/no-unused-vars': 'off',
+      'unused-imports/no-unused-imports': 'warn',
+      'unused-imports/no-unused-vars': 'off',
       '@typescript-eslint/consistent-type-imports': [
         'warn',
         { prefer: 'type-imports', fixStyle: 'separate-type-imports' },

@@ -18,10 +18,8 @@ import Animated, {
   useAnimatedStyle,
   withSpring,
   withTiming,
-  FadeIn,
-  FadeOut,
 } from 'react-native-reanimated';
-import { X, CheckCircle, AlertTriangle, Info, Crown, ShieldAlert, Gem } from 'lucide-react-native';
+import { X, CheckCircle, AlertTriangle, Info, Crown, ShieldAlert } from 'lucide-react-native';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 

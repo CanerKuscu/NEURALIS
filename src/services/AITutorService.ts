@@ -16,7 +16,6 @@ import type {
   Task,
   TaskAttempt,
 } from '../types';
-import { AITutorMessage, NeuralPathStep } from '../types';
 
 export type Exercise = {
   id: string;

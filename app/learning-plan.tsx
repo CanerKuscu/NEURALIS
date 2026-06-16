@@ -15,24 +15,13 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
-import {
-  ArrowLeft,
-  Brain,
-  Target,
-  CheckCircle,
-  Circle,
-  Sparkles,
-  Calendar,
-  TrendingUp,
-  Flame,
-  RefreshCw,
-} from 'lucide-react-native';
+import { ArrowLeft, CheckCircle, Circle, Sparkles, Calendar, RefreshCw } from 'lucide-react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Animated, { FadeInDown, FadeIn } from 'react-native-reanimated';
 import { useTheme } from '../src/context/ThemeContext';
 import { supabase } from '../src/config/supabase';
 import type { WeeklyPlan } from '../src/services/LearningPlanService';
-import { learningPlanService, DailyPlanItem } from '../src/services/LearningPlanService';
+import { learningPlanService } from '../src/services/LearningPlanService';
 import * as Haptics from 'expo-haptics';
 import i18n from '../src/i18n';
 
