@@ -31,49 +31,45 @@ const SENTRY_DSN = process.env.EXPO_PUBLIC_SENTRY_DSN || '';
  * - Release/environment tagging
  */
 export function initSentry(): void {
-    if (!SENTRY_DSN) {
-        if (__DEV__) {
-            console.log('[Sentry] No DSN configured — skipping initialization');
-        }
-        return;
+  if (!SENTRY_DSN) {
+    if (__DEV__) {
+      console.log('[Sentry] No DSN configured — skipping initialization');
     }
+    return;
+  }
 
-    Sentry.init({
-        dsn: SENTRY_DSN,
-        environment: Constants.expoConfig?.extra?.eas?.projectId
-            ? (process.env.EXPO_PUBLIC_APP_ENV || 'development')
-            : 'development',
-        release: `neuralis@${Constants.expoConfig?.version || '1.0.0'}`,
+  Sentry.init({
+    dsn: SENTRY_DSN,
+    environment: Constants.expoConfig?.extra?.eas?.projectId
+      ? process.env.EXPO_PUBLIC_APP_ENV || 'development'
+      : 'development',
+    release: `neuralis@${Constants.expoConfig?.version || '1.0.0'}`,
 
-        // Performance monitoring
-        tracesSampleRate: __DEV__ ? 1.0 : 0.2,
+    // Performance monitoring
+    tracesSampleRate: __DEV__ ? 1.0 : 0.2,
 
-        // Session tracking
-        enableAutoSessionTracking: true,
-        sessionTrackingIntervalMillis: 30000,
+    // Session tracking
+    enableAutoSessionTracking: true,
+    sessionTrackingIntervalMillis: 30000,
 
-        // Don't send events in dev mode
-        enabled: !__DEV__,
+    // Don't send events in dev mode
+    enabled: !__DEV__,
 
-        // Breadcrumbs
-        enableNativeCrashHandling: true,
+    // Breadcrumbs
+    enableNativeCrashHandling: true,
 
-        // Integrations
-        integrations: [
-            Sentry.reactNativeTracingIntegration(),
-        ],
+    // Integrations
+    integrations: [Sentry.reactNativeTracingIntegration()],
 
-        // Filter out non-critical errors
-        beforeSend(event) {
-            // Skip network timeout errors
-            if (event.exception?.values?.some(
-                (e) => e.value?.includes('Network request failed')
-            )) {
-                return null;
-            }
-            return event;
-        },
-    });
+    // Filter out non-critical errors
+    beforeSend(event) {
+      // Skip network timeout errors
+      if (event.exception?.values?.some((e) => e.value?.includes('Network request failed'))) {
+        return null;
+      }
+      return event;
+    },
+  });
 }
 
 /**
@@ -83,34 +79,34 @@ export function initSentry(): void {
  * @param context - Additional context (tags, extras) to attach
  */
 export function captureError(
-    error: Error,
-    context?: {
-        tags?: Record<string, string>;
-        extras?: Record<string, unknown>;
-        level?: Sentry.SeverityLevel;
-    },
+  error: Error,
+  context?: {
+    tags?: Record<string, string>;
+    extras?: Record<string, unknown>;
+    level?: Sentry.SeverityLevel;
+  },
 ): void {
-    if (!SENTRY_DSN) {
-        console.error('[Sentry] Error captured (not sent — no DSN):', error.message);
-        return;
-    }
+  if (!SENTRY_DSN) {
+    console.error('[Sentry] Error captured (not sent — no DSN):', error.message);
+    return;
+  }
 
-    Sentry.withScope((scope) => {
-        if (context?.tags) {
-            Object.entries(context.tags).forEach(([key, value]) => {
-                scope.setTag(key, value);
-            });
-        }
-        if (context?.extras) {
-            Object.entries(context.extras).forEach(([key, value]) => {
-                scope.setExtra(key, value);
-            });
-        }
-        if (context?.level) {
-            scope.setLevel(context.level);
-        }
-        Sentry.captureException(error);
-    });
+  Sentry.withScope((scope) => {
+    if (context?.tags) {
+      Object.entries(context.tags).forEach(([key, value]) => {
+        scope.setTag(key, value);
+      });
+    }
+    if (context?.extras) {
+      Object.entries(context.extras).forEach(([key, value]) => {
+        scope.setExtra(key, value);
+      });
+    }
+    if (context?.level) {
+      scope.setLevel(context.level);
+    }
+    Sentry.captureException(error);
+  });
 }
 
 /**
@@ -119,19 +115,19 @@ export function captureError(
  * @param user - User info, or null to clear
  */
 export function setSentryUser(
-    user: { id: string; email?: string; username?: string } | null,
+  user: { id: string; email?: string; username?: string } | null,
 ): void {
-    if (!SENTRY_DSN) return;
+  if (!SENTRY_DSN) return;
 
-    if (user) {
-        Sentry.setUser({
-            id: user.id,
-            email: user.email,
-            username: user.username,
-        });
-    } else {
-        Sentry.setUser(null);
-    }
+  if (user) {
+    Sentry.setUser({
+      id: user.id,
+      email: user.email,
+      username: user.username,
+    });
+  } else {
+    Sentry.setUser(null);
+  }
 }
 
 /**
@@ -142,18 +138,18 @@ export function setSentryUser(
  * @param data - Optional additional data
  */
 export function addBreadcrumb(
-    category: string,
-    message: string,
-    data?: Record<string, unknown>,
+  category: string,
+  message: string,
+  data?: Record<string, unknown>,
 ): void {
-    if (!SENTRY_DSN) return;
+  if (!SENTRY_DSN) return;
 
-    Sentry.addBreadcrumb({
-        category,
-        message,
-        data,
-        level: 'info',
-    });
+  Sentry.addBreadcrumb({
+    category,
+    message,
+    data,
+    level: 'info',
+  });
 }
 
 export { Sentry };

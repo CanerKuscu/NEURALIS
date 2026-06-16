@@ -23,20 +23,25 @@ export { useNotifications } from './useNotifications';
 
 // Audio Decay Hook (Duolingo-style persistence)
 export { useAudioDecay, DECAY_PHASES, DECAY_COLORS, TIME_THRESHOLDS } from './AudioDecayHook';
-export type { DecayPhase, AudioDecayState, UseAudioDecayOptions, UseAudioDecayReturn } from './AudioDecayHook';
+export type {
+  DecayPhase,
+  AudioDecayState,
+  UseAudioDecayOptions,
+  UseAudioDecayReturn,
+} from './AudioDecayHook';
 
 // Dynamic Visual Widget Hook (The Eye)
 export {
-    useDynamicVisualWidget,
-    VISUAL_THEMES,
-    getGradientColors,
-    getTextColorForState,
-    getBorderColorForState,
-    getMascotOpacityForHours,
+  useDynamicVisualWidget,
+  VISUAL_THEMES,
+  getGradientColors,
+  getTextColorForState,
+  getBorderColorForState,
+  getMascotOpacityForHours,
 } from './useDynamicVisualWidget';
 export type {
-    VisualState,
-    VisualTheme,
-    WidgetAnimations,
-    DynamicVisualWidgetState,
+  VisualState,
+  VisualTheme,
+  WidgetAnimations,
+  DynamicVisualWidgetState,
 } from './useDynamicVisualWidget';

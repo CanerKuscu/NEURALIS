@@ -1,10 +1,10 @@
 /**
  * NEURALIS - iOS Widget Configuration
  * WidgetKit Configuration for Home Screen Widget
- * 
+ *
  * NOTE: This file defines the widget structure.
  * The actual Swift implementation must be added to the iOS native project.
- * 
+ *
  * To implement:
  * 1. Create a Widget Extension in Xcode
  * 2. Add App Group for data sharing
@@ -16,30 +16,30 @@
 // ═══════════════════════════════════════════════════════════════════════════
 
 export const IOS_WIDGET_CONFIG = {
-    // Widget Extension Name
-    extensionName: 'NeuralisWidget',
+  // Widget Extension Name
+  extensionName: 'NeuralisWidget',
 
-    // App Group Identifier (for sharing data between app and widget)
-    appGroupId: 'group.com.neuralis.app',
+  // App Group Identifier (for sharing data between app and widget)
+  appGroupId: 'group.com.neuralis.app',
 
-    // Widget Kinds
-    kinds: {
-        small: 'NeuralisWidgetSmall',
-        medium: 'NeuralisWidgetMedium',
-    },
+  // Widget Kinds
+  kinds: {
+    small: 'NeuralisWidgetSmall',
+    medium: 'NeuralisWidgetMedium',
+  },
 
-    // Data Keys (stored in UserDefaults via App Group)
-    dataKeys: {
-        streakCount: 'streak_count',
-        foxStatus: 'fox_status',
-        countdownSeconds: 'countdown_seconds',
-        taskCompleted: 'task_completed',
-        accentColor: 'accent_color',
-        locale: 'locale',
-    },
+  // Data Keys (stored in UserDefaults via App Group)
+  dataKeys: {
+    streakCount: 'streak_count',
+    foxStatus: 'fox_status',
+    countdownSeconds: 'countdown_seconds',
+    taskCompleted: 'task_completed',
+    accentColor: 'accent_color',
+    locale: 'locale',
+  },
 
-    // Refresh Timeline
-    refreshInterval: 15, // minutes
+  // Refresh Timeline
+  refreshInterval: 15, // minutes
 } as const;
 
 // ═══════════════════════════════════════════════════════════════════════════

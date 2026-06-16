@@ -12,38 +12,38 @@ import { LoadingState, EmptyState, ErrorState, OfflineState } from '../../src/co
 describe('StateViews', () => {
     // ─── LoadingState ─────────────────────────────────────────────────────
     describe('LoadingState', () => {
-        it('renders with default message', () => {
-            const { getByText } = render(<LoadingState />);
+        it('renders with default message', async () => {
+            const { getByText  } = await render(<LoadingState />);
             expect(getByText('Loading...')).toBeTruthy();
         });
 
-        it('renders with custom message', () => {
-            const { getByText } = render(<LoadingState message="Yükleniyor..." />);
+        it('renders with custom message', async () => {
+            const { getByText  } = await render(<LoadingState message="Yükleniyor..." />);
             expect(getByText('Yükleniyor...')).toBeTruthy();
         });
     });
 
     // ─── EmptyState ────────────────────────────────────────────────────────
     describe('EmptyState', () => {
-        it('renders title and subtitle', () => {
-            const { getByText } = render(
+        it('renders title and subtitle', async () => {
+            const { getByText  } = await render(
                 <EmptyState title="No Data" subtitle="Nothing to show here" />
             );
             expect(getByText('No Data')).toBeTruthy();
             expect(getByText('Nothing to show here')).toBeTruthy();
         });
 
-        it('renders action button and triggers callback', () => {
+        it('renders action button and triggers callback', async () => {
             const onAction = jest.fn();
-            const { getByText } = render(
+            const { getByText  } = await render(
                 <EmptyState title="Empty" actionLabel="Add Item" onAction={onAction} />
             );
             fireEvent.press(getByText('Add Item'));
             expect(onAction).toHaveBeenCalledTimes(1);
         });
 
-        it('does not render action button when no callback', () => {
-            const { queryByText } = render(
+        it('does not render action button when no callback', async () => {
+            const { queryByText  } = await render(
                 <EmptyState title="Empty" actionLabel="Add Item" />
             );
             expect(queryByText('Add Item')).toBeNull();
@@ -52,40 +52,40 @@ describe('StateViews', () => {
 
     // ─── ErrorState ────────────────────────────────────────────────────────
     describe('ErrorState', () => {
-        it('renders default error message', () => {
-            const { getByText } = render(<ErrorState />);
+        it('renders default error message', async () => {
+            const { getByText  } = await render(<ErrorState />);
             expect(getByText('Oops!')).toBeTruthy();
             expect(getByText('Something went wrong')).toBeTruthy();
         });
 
-        it('renders custom error message', () => {
-            const { getByText } = render(<ErrorState message="Network error" />);
+        it('renders custom error message', async () => {
+            const { getByText  } = await render(<ErrorState message="Network error" />);
             expect(getByText('Network error')).toBeTruthy();
         });
 
-        it('renders retry button and fires callback', () => {
+        it('renders retry button and fires callback', async () => {
             const onRetry = jest.fn();
-            const { getByText } = render(<ErrorState onRetry={onRetry} />);
+            const { getByText  } = await render(<ErrorState onRetry={onRetry} />);
             fireEvent.press(getByText('Try Again'));
             expect(onRetry).toHaveBeenCalledTimes(1);
         });
 
-        it('does not render retry button without callback', () => {
-            const { queryByText } = render(<ErrorState />);
+        it('does not render retry button without callback', async () => {
+            const { queryByText  } = await render(<ErrorState />);
             expect(queryByText('Try Again')).toBeNull();
         });
     });
 
     // ─── OfflineState ─────────────────────────────────────────────────────
     describe('OfflineState', () => {
-        it('renders no connection message', () => {
-            const { getByText } = render(<OfflineState />);
+        it('renders no connection message', async () => {
+            const { getByText  } = await render(<OfflineState />);
             expect(getByText('No Connection')).toBeTruthy();
         });
 
-        it('renders retry button and fires callback', () => {
+        it('renders retry button and fires callback', async () => {
             const onRetry = jest.fn();
-            const { getByText } = render(<OfflineState onRetry={onRetry} />);
+            const { getByText  } = await render(<OfflineState onRetry={onRetry} />);
             fireEvent.press(getByText('Retry'));
             expect(onRetry).toHaveBeenCalledTimes(1);
         });

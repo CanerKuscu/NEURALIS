@@ -29,39 +29,39 @@ type EventData = Record<string, string | number | boolean | undefined>;
  * @returns Object with `trackEvent` and `trackScreenView` functions
  */
 export function useAnalytics() {
-    /**
-     * Track a custom event.
-     *
-     * @param eventName - Name of the event (e.g., 'lesson_completed')
-     * @param data - Additional event data
-     */
-    const trackEvent = useCallback((eventName: string, data?: EventData) => {
-        // Sentry breadcrumb for error context
-        addBreadcrumb('user_event', eventName, data as Record<string, unknown>);
+  /**
+   * Track a custom event.
+   *
+   * @param eventName - Name of the event (e.g., 'lesson_completed')
+   * @param data - Additional event data
+   */
+  const trackEvent = useCallback((eventName: string, data?: EventData) => {
+    // Sentry breadcrumb for error context
+    addBreadcrumb('user_event', eventName, data as Record<string, unknown>);
 
-        // Local logging in dev
-        if (__DEV__) {
-            console.log(`[Analytics] Event: ${eventName}`, data);
-        }
+    // Local logging in dev
+    if (__DEV__) {
+      console.log(`[Analytics] Event: ${eventName}`, data);
+    }
 
-        // Future: Add Firebase Analytics, Amplitude, etc.
-        // analytics().logEvent(eventName, data);
-    }, []);
+    // Future: Add Firebase Analytics, Amplitude, etc.
+    // analytics().logEvent(eventName, data);
+  }, []);
 
-    /**
-     * Track a screen view.
-     *
-     * @param screenName - Name of the screen being viewed
-     */
-    const trackScreenView = useCallback((screenName: string) => {
-        addBreadcrumb('navigation', `Viewed ${screenName}`);
+  /**
+   * Track a screen view.
+   *
+   * @param screenName - Name of the screen being viewed
+   */
+  const trackScreenView = useCallback((screenName: string) => {
+    addBreadcrumb('navigation', `Viewed ${screenName}`);
 
-        if (__DEV__) {
-            console.log(`[Analytics] Screen: ${screenName}`);
-        }
+    if (__DEV__) {
+      console.log(`[Analytics] Screen: ${screenName}`);
+    }
 
-        // Future: analytics().logScreenView({ screen_name: screenName });
-    }, []);
+    // Future: analytics().logScreenView({ screen_name: screenName });
+  }, []);
 
-    return { trackEvent, trackScreenView };
+  return { trackEvent, trackScreenView };
 }

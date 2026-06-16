@@ -1,6 +1,6 @@
 /**
  * NEURALIS - Main App Entry
- * 
+ *
  * This is the root component of the application. It handles:
  * 1. Initial resource loading (simulated or real).
  * 2. Displaying a branded splash screen during loading.
@@ -32,7 +32,7 @@ export default function App() {
         // Add font loading, asset prefetching, or cached data hydration here.
         // Minimum 500ms ensures splash is visible even on fast devices.
         await Promise.all([
-          new Promise(resolve => setTimeout(resolve, 500)),
+          new Promise((resolve) => setTimeout(resolve, 500)),
           // Future: Font.loadAsync({ ... }),
           // Future: Asset.loadAsync([...]),
         ]);
@@ -51,7 +51,7 @@ export default function App() {
   // ---------------------------------------------------------------------------
   if (!isAppReady) {
     return (
-      <MotiView 
+      <MotiView
         from={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ type: 'timing', duration: 800 }}
@@ -74,16 +74,16 @@ export default function App() {
             style={styles.logoContainer}
           >
             <Text style={styles.brandEmoji}>🦊</Text>
-            <MotiView 
+            <MotiView
               from={{ opacity: 0.1, scale: 0.8 }}
               animate={{ opacity: 0.5, scale: 1.2 }}
               transition={{ type: 'timing', duration: 1500, loop: true, repeatReverse: true }}
-              style={styles.logoGlowEffect} 
+              style={styles.logoGlowEffect}
             />
           </MotiView>
 
           {/* App Name & Tagline */}
-          <MotiText 
+          <MotiText
             from={{ opacity: 0, translateY: 20 }}
             animate={{ opacity: 1, translateY: 0 }}
             transition={{ type: 'timing', duration: 1000, delay: 300 }}
@@ -101,11 +101,7 @@ export default function App() {
           </MotiText>
 
           {/* Loading Indicator */}
-          <ActivityIndicator
-            size="large"
-            color={COLORS.fox.orange}
-            style={styles.spinner}
-          />
+          <ActivityIndicator size="large" color={COLORS.fox.orange} style={styles.spinner} />
 
           <MotiText
             from={{ opacity: 0 }}
@@ -130,7 +126,6 @@ export default function App() {
 
         {/* Expo Router Slot: Renders the current route */}
         <Slot />
-
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );

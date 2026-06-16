@@ -10,42 +10,42 @@ import { render, fireEvent } from '@testing-library/react-native';
 import { PrimaryButton } from '../../src/components/PrimaryButton';
 
 describe('PrimaryButton', () => {
-    it('renders with title text', () => {
-        const { getByText } = render(
+    it('renders with title text', async () => {
+        const { getByText  } = await render(
             <PrimaryButton title="Continue" onPress={() => { }} />
         );
         expect(getByText('Continue')).toBeTruthy();
     });
 
-    it('calls onPress when tapped', () => {
+    it('calls onPress when tapped', async () => {
         const onPress = jest.fn();
-        const { getByText } = render(
+        const { getByText  } = await render(
             <PrimaryButton title="Start" onPress={onPress} />
         );
         fireEvent.press(getByText('Start'));
         expect(onPress).toHaveBeenCalledTimes(1);
     });
 
-    it('does not call onPress when disabled', () => {
+    it('does not call onPress when disabled', async () => {
         const onPress = jest.fn();
-        const { getByText } = render(
+        const { getByText  } = await render(
             <PrimaryButton title="Locked" onPress={onPress} disabled />
         );
         fireEvent.press(getByText('Locked'));
         expect(onPress).not.toHaveBeenCalled();
     });
 
-    it('shows ActivityIndicator when loading', () => {
-        const { queryByText, UNSAFE_queryByType } = render(
+    it('shows ActivityIndicator when loading', async () => {
+        const { queryByText, UNSAFE_queryByType  } = await render(
             <PrimaryButton title="Save" onPress={() => { }} loading />
         );
         // Title should not be visible when loading
         expect(queryByText('Save')).toBeNull();
     });
 
-    it('does not call onPress when loading', () => {
+    it('does not call onPress when loading', async () => {
         const onPress = jest.fn();
-        const { root } = render(
+        const { root  } = await render(
             <PrimaryButton title="Save" onPress={onPress} loading />
         );
         // Loading state should prevent press

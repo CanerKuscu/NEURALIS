@@ -1,7 +1,7 @@
 /**
  * NEURALIS - Modern Zen Theme
  * Personalized AI Learning Platform
- * 
+ *
  * Mascot: Shadow Fox (Wise Fox) 🦊
  * Design: Clean, Modern, Dopamine-Driven
  */
@@ -316,7 +316,7 @@ export const LEAGUE_CONFIG = {
     color: COLORS.primary,
   },
   demotion: {
-    percentage: 0.20, // Bottom 20% demotes (6 kişi)
+    percentage: 0.2, // Bottom 20% demotes (6 kişi)
     zone: 'demotion',
     color: COLORS.error,
   },
@@ -345,8 +345,8 @@ export const LIVES_CONFIG = {
   maxLives: 5,
   regenerationMinutes: 288, // 24h / 5 hearts = 4.8h = 288 minutes per heart
   lossPerWrongAnswer: 1,
-  lossPerLesson: 1,           // 1 heart consumed when generating an AI lesson
-  adRewardLives: 1,           // 1 heart earned by watching an ad
+  lossPerLesson: 1, // 1 heart consumed when generating an AI lesson
+  adRewardLives: 1, // 1 heart earned by watching an ad
   premiumUnlimited: true,
 } as const;
 

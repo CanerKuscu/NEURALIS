@@ -22,17 +22,13 @@ import type { AccessibilityRole } from 'react-native';
  * @param hint - Optional additional context for screen reader users
  * @returns Object of React Native accessibility props
  */
-export function a11y(
-    label: string,
-    role: AccessibilityRole = 'text',
-    hint?: string,
-) {
-    return {
-        accessible: true,
-        accessibilityLabel: label,
-        accessibilityRole: role,
-        ...(hint ? { accessibilityHint: hint } : {}),
-    };
+export function a11y(label: string, role: AccessibilityRole = 'text', hint?: string) {
+  return {
+    accessible: true,
+    accessibilityLabel: label,
+    accessibilityRole: role,
+    ...(hint ? { accessibilityHint: hint } : {}),
+  };
 }
 
 /**
@@ -42,7 +38,7 @@ export function a11y(
  * @param hint - What happens when the button is pressed
  */
 export function a11yButton(label: string, hint?: string) {
-    return a11y(label, 'button', hint);
+  return a11y(label, 'button', hint);
 }
 
 /**
@@ -51,7 +47,7 @@ export function a11yButton(label: string, hint?: string) {
  * @param label - Header text for screen readers
  */
 export function a11yHeader(label: string) {
-    return a11y(label, 'header');
+  return a11y(label, 'header');
 }
 
 /**
@@ -60,15 +56,15 @@ export function a11yHeader(label: string) {
  * @param label - Image description for screen readers
  */
 export function a11yImage(label: string) {
-    return a11y(label, 'image');
+  return a11y(label, 'image');
 }
 
 /**
  * Minimum touch target size per WCAG 2.1 AA (44×44 dp).
  */
 export const MIN_TOUCH_TARGET = {
-    minWidth: 44,
-    minHeight: 44,
+  minWidth: 44,
+  minHeight: 44,
 };
 
 /**
@@ -80,20 +76,20 @@ export const MIN_TOUCH_TARGET = {
  * @returns Whether the contrast ratio meets WCAG AA
  */
 export function meetsContrastRatio(foreground: string, background: string): boolean {
-    const getLuminance = (hex: string): number => {
-        const rgb = hex
-            .replace('#', '')
-            .match(/.{2}/g)!
-            .map((c) => {
-                const v = parseInt(c, 16) / 255;
-                return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
-            });
-        return 0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2];
-    };
+  const getLuminance = (hex: string): number => {
+    const rgb = hex
+      .replace('#', '')
+      .match(/.{2}/g)!
+      .map((c) => {
+        const v = parseInt(c, 16) / 255;
+        return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+      });
+    return 0.2126 * rgb[0] + 0.7152 * rgb[1] + 0.0722 * rgb[2];
+  };
 
-    const l1 = getLuminance(foreground);
-    const l2 = getLuminance(background);
-    const ratio = (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05);
+  const l1 = getLuminance(foreground);
+  const l2 = getLuminance(background);
+  const ratio = (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05);
 
-    return ratio >= 4.5;
+  return ratio >= 4.5;
 }

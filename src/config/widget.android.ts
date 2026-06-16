@@ -1,10 +1,10 @@
 /**
  * NEURALIS - Android Widget Configuration
  * AppWidget Configuration for Home Screen Widget
- * 
+ *
  * NOTE: This file defines the widget structure.
  * The actual Kotlin/Java implementation must be added to the Android native project.
- * 
+ *
  * To implement:
  * 1. Create AppWidgetProvider in android/app/src/main/java
  * 2. Add widget layout XML
@@ -17,31 +17,31 @@
 // ═══════════════════════════════════════════════════════════════════════════
 
 export const ANDROID_WIDGET_CONFIG = {
-    // Widget Provider Class
-    providerClass: 'com.neuralis.app.widget.NeuralisWidgetProvider',
+  // Widget Provider Class
+  providerClass: 'com.neuralis.app.widget.NeuralisWidgetProvider',
 
-    // Widget Sizes
-    sizes: {
-        small: { minWidth: 110, minHeight: 110 },
-        medium: { minWidth: 250, minHeight: 110 },
-    },
+  // Widget Sizes
+  sizes: {
+    small: { minWidth: 110, minHeight: 110 },
+    medium: { minWidth: 250, minHeight: 110 },
+  },
 
-    // Shared Preferences
-    prefsName: 'NeuralisWidgetPrefs',
+  // Shared Preferences
+  prefsName: 'NeuralisWidgetPrefs',
 
-    // Data Keys
-    dataKeys: {
-        streakCount: 'streak_count',
-        foxStatus: 'fox_status',
-        countdownText: 'countdown_text',
-        foxEmoji: 'fox_emoji',
-        taskCompleted: 'task_completed',
-        accentColor: 'accent_color',
-        lastUpdated: 'last_updated',
-    },
+  // Data Keys
+  dataKeys: {
+    streakCount: 'streak_count',
+    foxStatus: 'fox_status',
+    countdownText: 'countdown_text',
+    foxEmoji: 'fox_emoji',
+    taskCompleted: 'task_completed',
+    accentColor: 'accent_color',
+    lastUpdated: 'last_updated',
+  },
 
-    // Update Interval
-    updateIntervalMs: 60000, // 1 minute
+  // Update Interval
+  updateIntervalMs: 60000, // 1 minute
 } as const;
 
 // ═══════════════════════════════════════════════════════════════════════════
