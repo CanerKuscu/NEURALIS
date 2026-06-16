@@ -36,7 +36,7 @@ describe('PrimaryButton', () => {
     });
 
     it('shows ActivityIndicator when loading', async () => {
-        const { queryByText, UNSAFE_queryByType  } = await render(
+        const { queryByText } = await render(
             <PrimaryButton title="Save" onPress={() => { }} loading />
         );
         // Title should not be visible when loading

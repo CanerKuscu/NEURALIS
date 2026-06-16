@@ -8,6 +8,7 @@
     "node_modules/expo-modules-core",
     "node_modules/expo-module-scripts",
     "node_modules",
-    "supabase/functions"
+    "supabase/functions",
+    "functions"
   ]
 }
