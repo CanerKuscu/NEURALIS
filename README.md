@@ -1,6 +1,28 @@
 # NEURALIS - Anti-Brain-Rot Learning Ecosystem
 
-> **High-end, gamified learning platform that eliminates digital distraction through psychological accountability and social consequences.**
+> **Dijital dikkat dağınıklığını psikolojik sorumluluk ve sosyal sonuçlar aracılığıyla ortadan kaldıran, üst düzey, oyunlaştırılmış öğrenme platformu.**
+> *(High-end, gamified learning platform that eliminates digital distraction through psychological accountability and social consequences.)*
+
+---
+
+## 🧠 Ne İşe Yarar? (What is it good for?)
+
+Neuralis, modern dünyanın en büyük problemlerinden biri olan "beyin çürümesine" (brain-rot) ve dijital dikkat dağınıklığına karşı geliştirilmiş bir odaklanma ve öğrenme ekosistemidir. 
+- **Öğrenme Alışkanlığı Kazandırır:** Kullanıcıları her gün düzenli olarak öğrenmeye teşvik eder.
+- **Ertelemeyi (Procrastination) Engeller:** Sadece kişisel değil, sosyal sorumluluklar yükleyerek erteleme hastalığını yener.
+- **Odaklanmayı Artırır:** Yapay zeka destekli analizlerle kullanıcının zayıf yönlerini bulur ve onlara odaklanmasını sağlar.
+- **Kullanım Alanları:** Yeni bir dil öğrenmek, yazılım dillerinde ustalaşmak, sınavlara hazırlanmak veya günlük okuma/çalışma hedeflerini tutturmak için mükemmel bir araçtır.
+
+## ⚙️ Nasıl Çalışır? (How does it work?)
+
+Uygulama, klasik öğrenme platformlarından (örneğin Duolingo) farklı olarak "acımasız" bir psikolojik altyapı üzerine kuruludur:
+
+1. **Gölge Tilki (Shadow Fox) ve Ölümcül Seri (Dying Streak):** Öğrenme serinizi devam ettirmek için 24 saatiniz vardır. Son 2 saate girdiğinizde "Nöral Çürüme" (Neural Decay) evresi başlar; görsel ve işitsel uyarıcılarla uygulama stres yaratır. Eğer süreyi kaçırırsanız seriniz tamamen sıfırlanır.
+2. **Sosyal Bağımlılık (Synapse Links):** Arkadaşlarınızla kaderinizi birleştirirsiniz. **Shared Fate Protocol** sayesinde, eğer biriniz görevini yapmazsa, **her ikinizin de serisi sıfırlanır.** Bu, yoğun bir sosyal baskı ve sorumluluk mekanizması yaratır.
+3. **Küresel Hiyerarşi:** Başarınız sadece puanlarla değil; "(Doğruluk x Hız) + (Seri Bonusu x 1.5)" formülüyle hesaplanan rekabetçi bir lig sisteminde değerlendirilir. Bronz'dan "Shadow Legend" seviyesine kadar yükselme şansı sunar.
+4. **Yapay Zeka Gölge Eğitmen (AI Shadow Tutor):** Sokratik sorgulama yöntemiyle çalışan yapay zeka (Claude/GPT-4o), yaptığınız hataları analiz eder, size doğrudan cevabı vermek yerine doğruyu bulduracak sorular sorar ve zorluğu anlık olarak sizin performansınıza göre ayarlar.
+
+---
 
 ## Theme: Stealth & Intelligence
 
@@ -80,24 +102,8 @@ npm run web
 ```
 neuralis/
 ├── app/                       # Expo Router screens & layouts
-│   ├── (auth)/                # Authentication flow (login, signup, etc.)
-│   ├── (tabs)/                # Main tab navigator (Home, Shop, Quests, etc.)
-│   ├── series/                # Dynamic series routes
-│   ├── _layout.tsx            # Root layout with providers
-│   └── *.tsx                  # Feature screens
 ├── src/
 │   ├── components/            # Reusable UI components
-│   │   ├── animations/        # Moti-based animation primitives
-│   │   ├── avatar/            # Avatar system components
-│   │   ├── design-system/     # Core design system elements
-│   │   ├── duo/               # Duolingo-style lesson UI
-│   │   ├── league/            # League & ranking components
-│   │   ├── ui/                # Generic UI (LoadingState, ErrorState, etc.)
-│   │   ├── EnergyMeter/       # Energy display
-│   │   ├── LeagueCard/        # League info card
-│   │   ├── ShadowFox/         # Animated mascot
-│   │   ├── StreakTimer/        # Streak countdown
-│   │   └── SynapseLink/       # Social link display
 │   ├── config/                # App configuration (Supabase client, etc.)
 │   ├── constants/             # Theme, colors, spacing tokens
 │   ├── context/               # React contexts (Theme, Language, Toast)
@@ -106,7 +112,7 @@ neuralis/
 │   ├── i18n/                  # Internationalization (8 languages, RTL)
 │   ├── locales/               # Translation files
 │   ├── providers/             # Provider components
-│   ├── services/              # Business logic services (30+ services)
+│   ├── services/              # Business logic services
 │   ├── store/                 # Zustand global state
 │   ├── theme/                 # Theme utilities
 │   ├── types/                 # TypeScript type definitions
@@ -155,32 +161,6 @@ EXPO_PUBLIC_APP_ENV=development
 
 ---
 
-## Core Features
-
-### 1. Shadow Fox Mascot & Dying Streak
-- **24-hour rolling window** — must complete daily task within 24h
-- **Neural Decay Phase** — last 2h trigger visual/audio degradation
-- **Final Mercy** — one difficult challenge to save streak (once per 24h)
-- Visual states: Healthy → Warning → Neural Decay → Critical → Dead
-
-### 2. Social Interdependency (Synapse Links)
-- **Shared Fate Protocol**: If either partner misses deadline, BOTH streaks break
-- Social accountability through consequences
-- Partner streak visibility and warnings
-
-### 3. Global Hierarchy (7+ Leagues)
-- Bronze → Silver → Gold → Platinum → Diamond → Master → Shadow Legend
-- Rank formula: `(Accuracy × Speed) + (StreakBonus × 1.5)`
-
-### 4. AI Shadow Tutor
-- Socratic error analysis with Claude/GPT-4o
-- Adaptive difficulty based on performance
-
-### 5. Internationalization
-Full RTL support with 8 languages: English, Türkçe, العربية, 日本語, 简体中文, Deutsch, Français, Español
-
----
-
 ## Testing
 
 ```bash
@@ -193,11 +173,6 @@ npm run test:watch
 # Generate coverage report
 npm run test:coverage
 ```
-
-Tests are located in `__tests__/` and organized by type:
-- `__tests__/components/` — Component render & interaction tests
-- `__tests__/services/` — Service logic unit tests
-- `__tests__/store/` — Zustand store tests
 
 ---
 
