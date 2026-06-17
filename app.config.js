@@ -40,6 +40,7 @@ export default {
         ]
       },
       "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
         "UIBackgroundModes": [
           "audio",
           "remote-notification"

@@ -25,6 +25,18 @@
                 "SENTRY_DISABLE_AUTO_UPLOAD": "true"
             }
         },
+        "preview-simulator": {
+            "ios": {
+                "simulator": true
+            },
+            "channel": "preview",
+            "env": {
+                "EXPO_PUBLIC_APP_ENV": "preview",
+                "EXPO_PUBLIC_SUPABASE_URL": "YOUR_SUPABASE_URL",
+                "EXPO_PUBLIC_SUPABASE_ANON_KEY": "YOUR_SUPABASE_ANON_KEY",
+                "SENTRY_DISABLE_AUTO_UPLOAD": "true"
+            }
+        },
         "production": {
             "autoIncrement": true,
             "channel": "production",
